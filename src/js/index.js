@@ -9,4 +9,13 @@ import "../styles/index.css";
 import Home from "./component/home.jsx";
 
 //render your react application
-ReactDOM.render(<Home />, document.querySelector("#app"));
+let counter = 0;
+setInterval(() => {
+    let four = Math.floor(counter/86400);
+    let three = Math.floor(counter/3600);
+    let two = Math.floor(counter/60);
+    let one = Math.floor(counter/1);
+    console.log(four, three, two, one);
+    ReactDOM.render(<Home secsNumber={one} minsNumber={two} hoursNumber={three} daysNumber={four} />, document.querySelector("#app"));
+    counter ++;
+}, 1000);

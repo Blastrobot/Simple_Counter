@@ -1,12 +1,59 @@
+body {
+    background: 
+        radial-gradient(at center, #3498db, #9b59b6);
+    display: flex;
+    flex-flow: column;
+}
 
+.alberto {
+    margin: 38vh auto;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    border: 20px solid transparent;
+    box-sizing: border-box;
+    letter-spacing: 1em;
+    padding: 1rem;
+}
+
+.animation {
+    background-image:
+        linear-gradient(white, white),
+        linear-gradient(180deg, cornflowerblue, purple 50%, cornflowerblue);
+
+      background-repeat: no-repeat;
+      background-size: 100% 100%, 100% 200%;
+      background-position: 0 0, 0 100%;
+      background-origin: padding-box, border-box;
+      animation: highlight 1s infinite alternate;
+}
+
+
+.alberto div {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    padding: 15px;
+    margin: 10px;
+    border-radius: 15%;
+    border-color: black;
+    border: 2px;
+}
+
+@keyframes highlight {
+    100% {
+      background-position: 0 0, 0 0;
+    }
+  }
 /* 
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+You can write your own styles here...
+
+
+...Or you can use the import command to include 
+other sylesheets into your bunde as well, e.j:
+
+import 'relative/path/to/stylesheet.scss';
 
 */
